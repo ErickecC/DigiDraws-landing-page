@@ -1,0 +1,249 @@
+body{
+    background-image: linear-gradient(to right, #0b008a, #000000);
+    margin: 0;
+    padding: 0;
+}
+*{
+    color: white;
+    font-family: arial;
+}
+img{
+    width: 100%;
+    border-radius: 5%;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Estilos de el nav, titulo */
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    text-transform: uppercase;
+
+}
+nav a {
+  transition: ;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+}
+#Digidraws-logo{
+    border-radius: 50%;
+    width: 15%;
+    margin-top: 100px;
+}
+/* responsive styles */
+@media screen and (max-width: 768px){
+    #Digidraws-logo{
+        width: 30%;
+        margin-top: 50px;
+    }
+}
+/* Estilos de informacion de digidraws */
+.container-detail{
+    background: white;   
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+#detail-text{
+    color: black;
+}
+/* estilos responsivo de detalles(movil) */
+@media screen and (max-width: 900px) {
+ .container-detail{
+     width: 90%;
+     overflow: scroll;
+ }
+}
+/*Estilos de Recursos*/
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    
+}
+.boxes div{
+    width: 120px;
+    height: 120%;
+    display: grid;
+    place-items: center;
+}
+.video{
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+}
+.video div{
+    
+    display: grid;
+    width: 200px;
+    height: 100px;
+    place-items: center;    
+}
+.video-movil{
+    display: none;
+}
+.ResourcesVideos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.textoS{
+    display: flex;
+    justify-content: space-around;
+}
+#textR{
+    transform: translateX(-150%);
+}
+iframe{
+    width: 250px;
+    height: 150px;
+}
+#RP{
+    padding-left: 5%;
+}
+/* estilos responsivos de recurso */
+@media screen and (max-width: 768px){
+    .boxes{
+       display: grid;
+       grid-template-columns: repeat(6, 1fr);       
+       overflow-x: scroll;
+       padding-bottom: 50px;
+    }
+    .boxes div{
+        overflow-x: scroll;
+        height: 200px;
+        width: 100%;
+    }
+    .img{
+        height: 160px;
+        min-height: 159px;
+        width: 160px;
+    }
+    .img{
+        width: 150px;
+        min-width: 100px;
+    }
+  .video{
+      display: none;
+      justify-content: center;
+  }
+  .video-movil
+  {
+  display: block;
+  }
+  iframe{
+      width: 250px;
+      height: 150px;
+      padding: 10px;
+  }
+  .textoS{
+      display: none;
+  }
+  #textR{
+      display: none;
+  }
+  .ResourcesVideos{
+  padding-top: 80px;
+      display: block;
+  }
+}
+
+/* estilos de Unete */
+.target{
+    background: white;
+    padding: 5px;
+    width: 225px;
+    height: 325px;
+}
+.target img{
+    width: 150px;
+    height: auto;
+}
+.target-input{
+   display: flex;
+   color: black;
+   text-align: center;
+   justify-content: space-around;
+}
+.target-input p, h3{
+    color: black;
+}
+.target-input img{
+    width: 70%;
+    border-radius: 50%;
+    padding-top: 20%;
+}
+/* estilos responsivos de esta seccion */
+@media screen and (max-width: 768px){
+    .target-input{
+        display: grid;
+        grid-gap: 20px;
+    }
+}
+
+/* estilos de dinamica */
+.div-dinamica{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+.info-winner, .list-participants{
+    background: white;
+    width: 90%;
+    color: black;
+    border-radius: 10px;
+}
+.list-participants div{
+    color: black;  
+}
+.info-winner{
+    height: 300px;
+    display: grid;
+    place-items: center;
+}
+.list-participants{
+    height: 280px;
+    display: grid;
+   
+    
+}
+.btn-mas{
+    color: black;
+    border-radius: 10px;
+}
+/* estilos responsivos de dinamicas */
+@media screen and (max-width: 768px){
+.div-dinamica{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+}
+
+/* estilos de footer */
+  .footer{
+      width: 100%;
+      height: 100%;
+      background: black;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      place-items: center;
+      justify-content: space-between;
+      padding-bottom: 20px;
+  }
+.box-f{
+    color: white;
+   
+}
